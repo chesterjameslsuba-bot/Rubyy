@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>For Ruby ❤️</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            overflow-x: hidden;
+        }
+
+        /* Background */
+        .final {
+            background-image: url('pusa.jpg');
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        /* Dark overlay */
+        .overlay {
+            background: rgba(0,0,0,0.5);
+            min-height: 100vh;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            animation: fadeIn 2s ease-in;
+        }
+
+        /* Title */
+        h1 {
+            font-size: 40px;
+            text-shadow: 0 0 10px pink, 0 0 20px red;
+        }
+
+        h2 {
+            color: #ffb6c1;
+        }
+
+        /* Image */
+        img {
+            width: 220px;
+            border-radius: 20px;
+            margin: 20px 0;
+            box-shadow: 0 0 20px pink;
+        }
+
+        /* Text */
+        p {
+            max-width: 700px;
+            margin: auto;
+            text-align: justify;
+            line-height: 1.7;
+            background: rgba(0,0,0,0.4);
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        /* Floating flowers */
+        .flower {
+            position: fixed;
+            top: -50px;
+            font-size: 24px;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(110vh);
+            }
+        }
+
+        /* Fade animation */
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="final">
+    <div class="overlay">
+
+        <h1>For You Ganda!! ❤️</h1>
+        <h2>You deserve everything beautiful 💖</h2>
+
+        <img src="Ruby.jpg">
+
+        <p>
+        Congrats again Rubyyy gandaaa! I'm so so so proud of youuu! Sana makamit mo lahat ng mga pangarap mo sa buhay at ipagpatuloy mo maging ikaw, yung Ruby na nagustuhan ko at pumukaw saakin. Kaya ko ginawa itong message na'to is para ikwemto sayo kung paano nagsimula yung nararamdaman ko sayo. Nagsimula lahat way back bago mag december, wala talaga ako balak mainlove, ni walang balak tumingin sa mga babae dahil nga sa naranasan ko nung nakaraan, akala ko hindi na magbabago pananaw ko na hindi na ako maiinlove ulit dahil walang may kaya umintindi saakin at tumanggap. Pero dumating yung pakiramdam saakin na "Siguro ok lang na magka gusto ako pero hindi ko i pupursue" kaya ayon, sumakto rin na napapalapit ako sayo non kaya ayon kada kita ko sayo, kada tingin ko is talaga namang nakaka inlove. Yung mga pasimpleng hawak ko sa buhok mo, mga kunwaring pagtago ko sa mga gamit mo para mapansin mo, yung paglipat ko sa likod ng upuan mo para lang maging kaharap ka, yung mga simpleng sulyapan natin na paborito ko, pero hindi lanb yan ang mga naka pukaw saakin. Mas nahulog ako sayo dahil nakikita ko kung anong klaseng tao ka, kung paano ka umasta, kung paano ka tumimdig bilang isang babae na may mataas na pangarap sa buhay. Kaya habang patagal ng patagal, mas onti onti akong nahulog sayo hanggang dumating na yung point na sinigurado kona sa sarili ko na hindi lang kita basta gusto, napapamahal nako sa kung sino ka at sayo. Kaya naman ganda, buong puso kitang iingatan habang buhay, gaya ng sinabi mo na gusto mo mag take risk kasama ako, well hindi ko sasayangin yon kasi ruby kahit ano pa pagdaanan natin, maging sino o ano kapa ay araw araw pa rin kitang pipiliin mahalin, makakasama mo ako sa lahat ganda at hanggang dulo mo mararanasan yung pinaka best treatment na deserve mo kasi goal ko yun. Pangarap ko rin na makasama ka sa pagkamit ko ng mga pangarap ko, kaya pangako ko sayo na gagawin ko ang lahat upang ipaglaban ko ang pag iibigan natin para hanggang dulo tayo pa rin ang magkasama, hinding hindi ako magbabago sayo ganda, paghihirapan kita sa abot ng makakaya ko at habang buhay ako, may magmamahal sayo na kagaya ko, hinding hindi ka susukuan mahlin at samahan habang buhay. Mahal na mahal kita forever Rubyy!
+        </p>
+
+    </div>
+</div>
+
+<script>
+/* Create floating flowers */
+for (let i = 0; i < 30; i++) {
+    let flower = document.createElement("div");
+    flower.className = "flower";
+    flower.innerHTML = "🌸";
+
+    flower.style.left = Math.random() * 100 + "vw";
+    flower.style.animationDuration = (5 + Math.random() * 5) + "s";
+
+    document.body.appendChild(flower);
+}
+</script>
+
+</body>
+</html>
